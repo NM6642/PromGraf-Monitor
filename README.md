@@ -23,7 +23,7 @@ This project demonstrates how to monitor a Flask application locally using Prome
 - Define Prometheus alerting rules to notify on critical events (e.g., high error rates)  
 - Automate Grafana dashboard provisioning with configuration files for easy setup  
 - Extend monitoring to multiple Flask microservices or other applications  
-- Deploy this monitoring stack to a cloud environment (AWS, Azure, GCP) for production use  
+- Deploy this monitoring stack to a cloud environment (AWS, Azure, GCP) for production use
 
 
 ---
