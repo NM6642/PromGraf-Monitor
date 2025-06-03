@@ -24,7 +24,7 @@ This project demonstrates how to monitor a Flask application locally using Prome
 - Automate Grafana dashboard provisioning with configuration files for easy setup  
 - Extend monitoring to multiple Flask microservices or other applications  
 - Deploy this monitoring stack to a cloud environment (AWS, Azure, GCP) for production use  
-- Explore additional metrics and custom instrumentation in your Flask app
+
 
 ---
 
