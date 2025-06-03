@@ -1,4 +1,4 @@
-# Flask Monitoring with Prometheus & Grafana
+# Monitoring with Prometheus & Grafana
 
 This project demonstrates how to monitor a Flask application locally using Prometheus and Grafana, orchestrated with Docker Compose. The Flask app exposes metrics that Prometheus scrapes, and Grafana visualizes these metrics on dashboards, helping you understand your app’s performance in real time.
 
