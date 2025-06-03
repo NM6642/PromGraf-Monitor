@@ -14,25 +14,7 @@ This project demonstrates how to monitor a Flask application locally using Prome
 - To stop and clean up all running containers and networks:  
   `docker-compose down`
 
----
-
-## Accessing Services on Localhost
-
-- **Flask App:** http://localhost:5000 — The web app you are monitoring  
-- **Prometheus:** http://localhost:9090 — Metrics scraping and query interface  
-- **Grafana:** http://localhost:3000 — Visualization and dashboard interface
-
----
-
-## Grafana Setup Steps
-
-1. Open Grafana at http://localhost:3000  
-2. Login with default username **admin** and password **admin**  
-3. Add a new data source and select **Prometheus**  
-4. Set the Prometheus URL to `http://prometheus:9090` (this is the service name inside Docker Compose)  
-5. Save and test the connection to ensure Grafana can fetch metrics  
-6. Create a new dashboard  
-7. Add a panel with the Prometheus query: `app_requests_total` to visualize total HTTP requests to the Flask app
+  **Note:** All services run locally and can be accessed via `localhost` URLs in your browser.
 
 ---
 
