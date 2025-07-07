@@ -1,0 +1,25 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    docker --version
+    docker-compose --version
+  displayName: 'Check Docker & Docker Compose installed'
+
+- script: |
+    docker-compose build
+  displayName: 'Build Docker images'
+
+- script: |
+    docker-compose up -d
+    sleep 10
+    docker-compose ps
+  displayName: 'Start Docker Compose stack and check status'
+
+- script: |
+    docker-compose down
+  displayName: 'Stop Docker Compose stack'
